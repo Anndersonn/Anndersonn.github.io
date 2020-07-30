@@ -1,0 +1,24 @@
+// main: ../style.less
+
+.input {
+    display: block;
+    width: 100%;
+
+    padding: 1.4rem 1.8rem;
+
+    font-family: inherit;
+
+    font-size: 0.84rem;
+    line-height: 1.2;
+    border: 1px solid fade(@black, 30%);
+    border-radius: 20px;
+
+    font-weight: 400;
+
+    transition: border-color 1s linear;
+
+    &:focus {
+        outline: none;
+        border-color: black;
+    }
+}

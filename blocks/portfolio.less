@@ -1,0 +1,210 @@
+// main: ../style.less
+
+
+.portfolio__title {
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.portfolio__main {
+
+    @media @mobile-lg {
+        font-size: 1.5rem;
+    }
+}
+
+.portfolio__inner {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.portfolio__content {
+    overflow: hidden;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px fade(@black, 30%);
+
+    &:hover {
+        transition: .3s linear;
+        box-shadow: 4px 4px 15px rgba(179, 164, 164, );
+    }
+
+}
+
+.portfolio__column {
+
+    width: 70%;
+    padding: 1rem;
+
+    @media @mobile-lg {
+        flex-basis: 50%;
+    }
+
+    @media @mobile-md {
+        flex-basis: 100%;
+    }
+
+
+            @media @mobile-lg {
+    width: 90%;}
+
+
+}
+
+.portfolio__black {
+    position: absolute;
+    width:100%;
+    height: 100%;
+
+    transition: .3s linear;
+
+    &:hover {
+    background-color: fade(@black, 90%);
+        }
+
+}
+
+.portfolio__active {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    min-height: 500px;
+
+    background: url(img/project-image.jpg) center no-repeat;
+    background-size: 100%;
+
+    text-align: center;
+
+    display: flex;
+
+    position: relative;
+
+    transition: .3s linear;
+
+    &:hover {
+
+        background-color: #000;
+    }
+
+    @media @tablet {
+        min-height: 300px;
+    }
+
+
+    @media @mobile-lg {
+        min-height: 200px;
+    }
+
+        @media @mobile-md {
+        min-height: 180px;
+    }
+
+            @media @mobile-sm {
+        min-height: 160px;
+    }
+
+}
+
+.portfolio__background {
+
+    background-color: #000;
+        width: 100%;
+    cursor: pointer;
+    height: 100%;
+    min-height: 500px;
+    text-align: center;
+
+    display: flex;
+
+    position: relative;
+
+    transition: .3s linear;
+
+
+        @media @tablet {
+        min-height: 300px;
+    }
+
+
+    @media @mobile-lg {
+        min-height: 200px;
+    }
+
+        @media @mobile-md {
+        min-height: 180px;
+    }
+
+            @media @mobile-sm {
+        min-height: 160px;
+    }
+}
+
+.portfolio__number {
+
+    color: #fff;
+    position: absolute;
+
+    font-size: 5rem;
+
+    right: 2%;
+    top: 10%;
+    z-index: 0;
+
+    @media @mobile-lg {
+        font-size: 3rem;
+    }
+
+
+
+}
+
+#text__progress, .portfolio__progress {
+    display: flex;
+    color: #fff;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    position: absolute;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    transition: .2s linear;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    @media @mobile-lg {
+        font-size: 1.5rem;
+    }
+
+}
+
+.portfolio__name {
+    font-style: 1.06rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.portfolio__category {
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: fade(@black, 70%);
+}
+
+.portfolio__item {
+    text-transform: uppercase;
+    padding: 1rem;
+}

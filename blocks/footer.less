@@ -1,0 +1,160 @@
+// main: ../style.less
+
+
+
+
+
+.footer {
+    background: url("img/footer-img1.jpg") center no-repeat;
+    background-size: 100%;
+    padding: 2rem 0;
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile-lg {
+        display: block;
+    }
+
+}
+
+.footer__nav-link {
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: @white;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+        transition: .4s linear;
+
+    }
+
+    @media @mobile-md {
+        font-size: 0.5rem;
+    }
+
+    &:first-child {
+        display: inline-block;
+        vertical-align: top;
+
+
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+
+        font-family: inherit;
+        font-size: .8rem;
+
+        cursor: pointer;
+
+        color: @white;
+        background-color: transparent;
+
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+
+    &:last-child {
+
+        display: inline-block;
+        vertical-align: top;
+
+
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+
+        font-family: inherit;
+        font-size: 1rem;
+
+        cursor: pointer;
+
+        color: @white;
+        background-color: transparent;
+
+        border: 1px solid @white;
+
+        padding: 0.2rem 0.5rem;
+
+        border-radius: 30px;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    @media @mobile-md {
+        font-size: 0.5rem;
+        padding: 0.1rem 0.3rem
+    }
+}
+
+
+
+.footer__credits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media @mobile-lg {
+        margin-bottom: 2rem;
+    }
+
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: @white;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    @media @mobile-md {
+        padding-left: 1rem;
+    }
+}
+
+
+.footer__mail {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    a {
+        text-decoration: none;
+        color: @white;
+        cursor: auto;
+
+    }
+
+    @media @mobile-md {
+        padding-right: 1rem;
+    }
+}

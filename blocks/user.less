@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.user {
+    display: flex;
+
+}
+
+
+.user__avatar {
+    width: 57px;
+    height: 57px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.user__content {
+    font-size: 0.8rem;
+    color: @black;
+    padding-left: 0.8rem;
+
+}
+
+.user__name {
+    padding-top: 0.3rem;
+    font-weight: 700;
+
+    @media @mobile-lg {
+        font-size: .7rem;
+    }
+}
+
+
+.user__prof {
+    padding-top: 0.2rem;
+    opacity: 70%;
+
+    @media @mobile-lg {
+        font-size: .7rem;
+    }
+}

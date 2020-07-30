@@ -1,0 +1,57 @@
+// main: ../style.less
+.nav {
+    display: flex;
+    align-items: center;
+
+
+    @media @tablet {
+        display: none;
+    }
+}
+
+.nav__link {
+
+
+
+    margin-left: 2.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @white;
+    border-bottom: 2px solid transparent;
+
+
+    &:hover:not(.nav__link--btn) {
+        border-color: @white;
+        transition: .5s linear;
+
+    }
+
+    &:last-child {
+        padding: 0.66rem 1rem;
+        border: 2px solid @white;
+        border-radius: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: @white;
+            color: @black;
+            transition: .5s linear;
+        }
+
+    }
+
+}
+
+.burger {
+    display: none;
+
+    @media @tablet {
+        display: block;
+    }
+}

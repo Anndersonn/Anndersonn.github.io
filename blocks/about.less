@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.about__inner {
+    display: flex;
+    padding: 6rem 0;
+}
+
+.about__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: @black;
+}
+
+.about__subtitle {
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: @lightgray;
+}
+
+.about__text {
+    font-size: 0.66rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.about__content,
+.about__photo {
+    width: 50%;
+}
+
+.about__photo {
+    position: relative;
+    img {
+        bottom:0;
+        left: 1rem;
+    position:absolute;
+    display: block;
+    max-width: 80%;
+    height: auto;
+    border-radius: 20%;
+}
+}
+

@@ -1,0 +1,139 @@
+// main: ../style.less
+
+.modal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(26, 27, 28, 0);
+    backdrop-filter: blur(8px);
+
+
+}
+
+
+
+.modal__dialog {
+    width: 100%;
+    max-width: 700px;
+
+    background-color: white;
+    padding: 2rem;
+    margin: auto;
+    position: relative;
+
+
+
+
+
+    &--sm {
+        display: flex;
+        max-height: 900px;
+        padding: 0;
+
+        max-width: 900px;
+    }
+
+    @media @mobile-lg {
+        margin: 2rem;
+    }
+
+    /*Плавное появление модальных окон*/
+
+
+    animation-name: animate;
+
+    animation-duration: 0.5s;
+
+    @keyframes animate {
+        from {
+            top: -320px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+
+}
+
+
+.modal__text {
+    font-size: 0.66rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.modal__subtitle {
+    text-align: center;
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: @lightgray;
+
+    &--sm {
+        text-align: start;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: @black;
+        margin-bottom: 3rem;
+    }
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: @black;
+
+    &--sm {
+        text-align: start;
+        text-transform: uppercase;
+    }
+}
+
+.modal__content {
+    max-width: 100%;
+    height: 100%;
+    width: 47%;
+    padding: 1rem 2rem;
+
+    @media @mobile-lg {
+
+    width:100%;
+        }
+}
+
+.modal__photo {
+    width: 53%;
+    background: @black url("img/7bSRt9.jpg") 100% 100% no-repeat;
+    background-size: cover;
+
+    @media @mobile-lg {
+        display: none;
+    }
+}
+
+
+.image__contact {
+    max-width: 20px;
+    margin-right: 1rem;
+}
+
+.navigation__contact {
+    display: flex;
+    align-items: center;
+
+    + .navigation__contact {
+        margin-top: 1rem;
+    }
+}
