@@ -37,34 +37,37 @@
         padding: 0;
 
         max-width: 900px;
-    }
-
-    @media @mobile-lg {
-        height: auto;
-        margin: auto 2rem;
-        max-width: 700px;
-    }
-
-    /*Плавное появление модальных окон*/
 
 
-    animation-name: animate;
+        @media @mobile-lg {
 
-    animation-duration: 0.5s;
+            max-height: 700px;
+            margin: auto 2rem;
+            max-width: 700px;
 
-    @keyframes animate {
-        from {
-            top: -320px;
-            opacity: 0
         }
 
-        to {
-            top: 0;
-            opacity: 1
+        /*Плавное появление модальных окон*/
+
+
+        animation-name: animate;
+
+        animation-duration: 0.5s;
+
+        @keyframes animate {
+            from {
+                top: -320px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
         }
+
+
     }
-
-
 }
 
 
