@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Slobodianyk Andrzej</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
-<body class="no-scroll">
+<body>
     <div class="header__bg">
         <div class="header">
             <div class="container">
@@ -28,7 +28,7 @@
                         <a class="nav__link" href="#portfolio">PROJECTS</a>
                         <a class="nav__link" href="#footer">CONTACT</a>
                         <a class="nav__link" href="#skills">SKILLS</a>
-                        <button id="btn__hire" class="nav__link">HIRE ME</button>
+                        <button data-hire class="nav__link">HIRE ME</button>
                     </nav>
                     <div class="burger">
                         <img src="img/burger.svg" alt="" class="burger__icon" width="30">
@@ -52,7 +52,7 @@
                             <a class="social__link" href="https://www.facebook.com/profile.php?id=100006173475893" target="_blank"><img src="img/Fb.png" alt=""></a>
                             <a class="social__link" href="https://github.com/Anndersonn/Anndersonn.github.io" target="_blank"><img src="img/icons8-github-384.png" width="41" height="41" alt=""></a>
                         </div>
-                        <button id="btn__about" class="btn">About me</button>
+                        <button data-open class="btn">About me</button>
                     </div>
                 </div>
                 <!--intro__inner-->
@@ -283,9 +283,9 @@
                 </div>
 
                 <div class="footer__nav">
-                    <button id="footer__about" class="footer__nav-link">ABOUT ME</button>
+                    <button data-open class="footer__nav-link">ABOUT ME</button>
                     <a class="footer__nav-link" href="#portfolio">PROJECTS</a>
-                    <button id="footer__hire" class="footer__nav-link">HIRE ME</button>
+                    <button data-hire id="footer__hire" class="footer__nav-link">HIRE ME</button>
                 </div>
 
             </div>
@@ -296,10 +296,10 @@
     </footer>
     <!--footer-->
     <!---------------------------------------------------    MODALS    ------------------------------------------------- -->
-    <div class="modal" id="modal__about" style="display: none;">
+    <div class="modal" id="modal__about">
         <div class="modal__dialog">
             <div class="modal__work">
-                <button class="locker__about">&times;</button>
+                <button data-close class="locker__about">&times;</button>
                 <div class="modal__title">ABOUT ME</div>
                 <div class="modal__subtitle">WHO AM I</div>
                 <div class="modal__text">My name is <span class="text">Andrzej Slobodianyk</span> and I’m a Junior Front-End Developer. I have studied Accounting and Finanse at the University of Banking in Wrocław and now I have successfully transferred my passion to programming languages.
@@ -315,9 +315,9 @@ My main professional goal is to find a job that will give me an opportunity to d
         </div>
     </div>
 
-    <div class="modal" id="modal__hire" style="display: none;">
+    <div class="modal" id="modal__hire">
         <div class="modal__dialog modal__dialog--sm">
-            <button class="locker__hire locker__hire--second">&times;</button>
+            <button hire-close class="locker__hire locker__hire--second">&times;</button>
             <div class="modal__content">
                 <div class="modal__title modal__title--sm">Let's talk!</div>
                 <div class="modal__subtitle modal__subtitle--sm">Call me or send a request</div>

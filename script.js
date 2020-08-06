@@ -1,94 +1,91 @@
-        /*SWAL ERROR*/
+window.addEventListener('DOMContentLoaded', () => {
 
-        var resume = document.getElementById('resume');
-        resume.addEventListener('click', function() {
-            swal("Sorry", "I'm currently working on it", "error");
+    ///////////*SWAL ERROR*////////////////
+
+    var resume = document.getElementById('resume');
+    resume.addEventListener('click', function () {
+        swal("Sorry", "I'm currently working on it", "error");
+    });
+
+   ///////////////////// MODALS ///////////////////
+
+    const openModal = document.querySelectorAll('[data-open]'),
+        closeModal = document.querySelector('[data-close]'),
+        modalAbout = document.getElementById('modal__about'),
+        openHire = document.querySelectorAll('[data-hire]'),
+        closeHire = document.querySelector('[hire-close]'),
+        modalHire = document.getElementById('modal__hire');
+
+
+
+    openModal.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modalAbout.classList.add('open');
+            modalAbout.classList.remove('hide');
+            document.body.style.overflow = 'hidden';
         });
-
-        /*TEST*/
-
-        /*MODAL ABOUT ME*/
-
-        var modal__about = document.getElementById('modal__about'),
-            /*First modal window*/
-            footer__about = document.getElementById('footer__about'),
-            /*Button footer__about*/
-            button__about = document.getElementById('btn__about'),
-            /*Button header__about*/
-            locker__about = document.querySelector('.locker__about'); /*Close modal window*/
+    });
+    openHire.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modalHire.classList.add('open');
+            modalHire.classList.remove('hide');
+            document.body.style.overflow = 'hidden';
+        });
+    });
 
 
-        button__about.onclick = function() {
-            modal__about.style.display = "flex"; /*Show modal window (HEADER)*/
-            body.style.overflow = 'hidden'; /*Hide scroll*/
+    function modalCLose() {
+        modalAbout.classList.add('hide');
+        modalAbout.classList.remove('open');
+        document.body.style.overflow = '';
+    }
 
-        };
+    function hireClose() {
+        modalHire.classList.add('hide');
+        modalHire.classList.remove('open');
+        document.body.style.overflow = '';
+    }
 
-        footer__about.onclick = function() {
-            modal__about.style.display = "flex"; /*Show modal window (FOOTER)*/
-            body.style.overflow = 'hidden'; /*Hide scroll*/
-        };
-
-        locker__about.onclick = function() {
-            modal__about.style.display = "none"; /*Close modal windows*/
-            body.style.overflow = ''; /*Show scroll*/
-        };
-
-        /*MODAL HIRE ME*/
-
-        var modal__hire = document.getElementById('modal__hire'),
-            button__hire = document.getElementById('btn__hire'),
-            footer__hire = document.getElementById('footer__hire'),
-            locker__hire = document.querySelector('.locker__hire');
-
-        button__hire.onclick = function() {
-            modal__hire.style.display = "flex";
-            body.style.overflow = 'hidden';
-
-        };
-
-        footer__hire.onclick = function() {
-            modal__hire.style.display = "flex";
-            body.style.overflow = 'hidden';
-        };
-
-        locker__hire.onclick = function() {
-            modal__hire.style.display = "none";
-            body.style.overflow = '';
-        };
-
-        /*WINDOW CLOSE*/
-
-        window.onclick = function(event) {
-            if (event.target == modal__hire) {
-                modal__hire.style.display = "none";
-                body.style.overflow = '';
-
-            };
-            if (event.target == modal__about) {
-                modal__about.style.display = "none";
-                body.style.overflow = '';
-            }
-        };
-
-
-        /*SCROLL*/
-
-        var body = document.querySelector("body");
+    closeModal.addEventListener('click', modalCLose);
+    closeHire.addEventListener('click', hireClose);
 
 
 
-        /*ANCHORS*/
-
-        const anchors = document.querySelectorAll('a[href*="#"]')
-
-        for (let anchor of anchors) {
-            anchor.addEventListener("click", function(event) {
-                event.preventDefault();
-                const blockID = anchor.getAttribute('href')
-                document.querySelector('' + blockID).scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                })
-            })
+    modalAbout.addEventListener('click', (e) => {
+        if (e.target === modalAbout) {
+            modalCLose();
         }
+    });
+
+
+    modalHire.addEventListener('click', (e) => {
+        if (e.target === modalHire) {
+            hireClose();
+        }
+    });
+
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape") {
+            modalCLose();
+            hireClose();
+        }
+    });
+
+
+
+    ////////////*ANCHORS*//////////////////////
+
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener("click", function (event) {
+            event.preventDefault();
+            const blockID = anchor.getAttribute('href')
+            document.querySelector('' + blockID).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+    }
+});
