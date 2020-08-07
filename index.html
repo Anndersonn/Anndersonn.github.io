@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="animate.css">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <div class="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="user">
+                    <div class="user wow fadeInLeft">
                         <div class="user__avatar">
                             <img src="img/photo1.jpg" width="60" height="60" alt="">
                         </div>
@@ -25,14 +27,18 @@
                         </div>
                     </div>
                     <nav class="nav">
-                        <a class="nav__link" href="#portfolio">PROJECTS</a>
-                        <a class="nav__link" href="#footer">CONTACT</a>
-                        <a class="nav__link" href="#skills">SKILLS</a>
-                        <button data-hire class="nav__link">HIRE ME</button>
+
+                        <a class="nav__link wow fadeInRight" href="#portfolio">PROJECTS</a>
+                        <a class="nav__link wow fadeInRight" href="#footer">CONTACT</a>
+                        <a class="nav__link wow fadeInRight" href="#skills">SKILLS</a>
+                        <button data-hire class="nav__link wow fadeInRight">HIRE ME</button>
                     </nav>
-                    <div class="burger">
-                        <img src="img/burger.svg" alt="" class="burger__icon" width="30">
+                    <div class="burger wow fadeInRight">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
+
                 </div>
                 <!--header__inner-->
             </div>
@@ -44,15 +50,18 @@
             <div class="container">
                 <div class="intro__inner">
                     <div class="intro__content">
-                        <h2 class="subtitle__content">Hello, I’m</h2>
-                        <h1 class="title__content">Andrzej Slobodianyk</h1>
-                        <div class="intro__text">Junior Front-End developer</div>
+                        <h2 class="subtitle__content wow fadeIn" data-wow-delay="0.4s">Hello, I’m</h2>
+                        <h1 class="title__content wow fadeIn" data-wow-delay="0.5s">Andrzej Slobodianyk</h1>
+                        <div class="intro__text wow fadeIn" data-wow-delay="0.6s">Junior Front-End developer</div>
                         <div class="social">
-                            <a class="social__link" href="https://www.linkedin.com/in/andrzej-slobodianyk-746a96177/" target="_blank"><img src="img/In.png" alt=""></a>
-                            <a class="social__link" href="https://www.facebook.com/profile.php?id=100006173475893" target="_blank"><img src="img/Fb.png" alt=""></a>
-                            <a class="social__link" href="https://github.com/Anndersonn/Anndersonn.github.io" target="_blank"><img src="img/icons8-github-384.png" width="41" height="41" alt=""></a>
+                            <a class="social__link wow fadeInUp" data-wow-delay="0.4s" href="https://www.linkedin.com/in/andrzej-slobodianyk-746a96177/"
+                                target="_blank"><img src="img/In.png" alt=""></a>
+                            <a class="social__link wow fadeInUp" data-wow-delay="0.5s" href="https://www.facebook.com/profile.php?id=100006173475893"
+                                target="_blank"><img src="img/Fb.png" alt=""></a>
+                            <a class="social__link wow fadeInUp" data-wow-delay="0.6s" href="https://github.com/Anndersonn/Anndersonn.github.io"
+                                target="_blank"><img src="img/icons8-github-384.png" width="41" height="41" alt=""></a>
                         </div>
-                        <button data-open class="btn">About me</button>
+                        <button data-open class="btn wow fadeInUp">About me</button>
                     </div>
                 </div>
                 <!--intro__inner-->
@@ -65,10 +74,10 @@
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="portfolio__title">
-                <h1 class="portfolio__main">Projects</h1>
+                <h1 class="portfolio__main btn wow fadeInUp">Projects</h1>
             </div>
             <div class="portfolio__inner">
-                <div class="portfolio__column">
+                <div class="portfolio__column btn wow fadeInUp">
                     <div class="portfolio__content">
                         <div class="portfolio__active" alt="">
                             <div class="portfolio__black">
@@ -89,7 +98,7 @@
                 </div>
 
 
-                <div class="portfolio__column">
+                <div class="portfolio__column btn wow fadeInUp">
                     <div class="portfolio__content">
 
                         <div class="portfolio__background" alt="">
@@ -165,13 +174,13 @@
     </div>
     <!--/portfolio-->
     <div id="skills" class="skills">
-        <h1 class="skills__title">My skills</h1>
+        <h1 class="skills__title wow fadeInUp">My skills</h1>
         <div class="skills__container">
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp">
                     <img src="img/icons8-html-5-480.png" alt="">
                 </div>
-                <div class="skills__html">
+                <div class="skills__html wow fadeInUp">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -180,10 +189,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp" data-wow-duration="0.3s">
                     <img src="img/sass.png" alt="">
                 </div>
-                <div class="skills__sass">
+                <div class="skills__sass wow fadeInUp" data-wow-duration="0.3s">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -192,10 +201,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp" data-wow-duration="0.4s">
                     <img src="img/icons8-javascript-480.png" alt="">
                 </div>
-                <div class="skills__js">
+                <div class="skills__js wow fadeInUp" data-wow-duration="0.4s">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -204,10 +213,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp" data-wow-duration="0.5s">
                     <img src="img/icons8-github-384.png" alt="">
                 </div>
-                <div class="skills__git">
+                <div class="skills__git wow fadeInUp" data-wow-duration="0.5s">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -216,10 +225,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp">
                     <img src="img/icons8-bootstrap-240.png" alt="">
                 </div>
-                <div class="skills__bootstrap">
+                <div class="skills__bootstrap wow fadeInUp">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -228,10 +237,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp" data-wow-duration="0.3s">
                     <img src="img/icons8-react-480.png" alt="">
                 </div>
-                <div class="skills__react">
+                <div class="skills__react wow fadeInUp" data-wow-duration="0.3s">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -240,10 +249,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp" data-wow-duration="0.4s">
                     <img src="img/icons8-redux-240.png" alt="">
                 </div>
-                <div class="skills__redux">
+                <div class="skills__redux wow fadeInUp" data-wow-duration="0.4s">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -252,10 +261,10 @@
                 </div>
             </div>
             <div class="skills__inner">
-                <div class="skills__icon">
+                <div class="skills__icon wow fadeInUp" data-wow-duration="0.5s">
                     <img src="img/icons8-npm-480.png" alt="">
                 </div>
-                <div class="skills__npm">
+                <div class="skills__npm wow fadeInUp" data-wow-duration="0.5s">
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
                     <i class="fas fa-check-square"></i>
@@ -270,11 +279,14 @@
     <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__credits">
+                <div class="footer__credits wow fadeInLeft">
                     <div class="footer__socials">
-                        <a href="https://www.facebook.com/profile.php?id=100006173475893" target="_blank"><img src="img/facebook.svg" width="20" height="20" alt=""></a>
-                        <a href="https://www.linkedin.com/in/andrzej-slobodianyk-746a96177/" target="_blank"><img src="img/linkedin.svg" width="20" height="20" alt=""></a>
-                        <a href="https://github.com/Anndersonn/Anndersonn.github.io" target="_blank"><img src="img/GitHub-Mark-Light-64px.png" width="22" height="22" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=100006173475893" target="_blank"><img
+                                src="img/facebook.svg" width="20" height="20" alt=""></a>
+                        <a href="https://www.linkedin.com/in/andrzej-slobodianyk-746a96177/" target="_blank"><img
+                                src="img/linkedin.svg" width="20" height="20" alt=""></a>
+                        <a href="https://github.com/Anndersonn/Anndersonn.github.io" target="_blank"><img
+                                src="img/GitHub-Mark-Light-64px.png" width="22" height="22" alt=""></a>
                         <a href="#"><img src="img/mail2.svg" width="20" height="25" alt=""></a>
                     </div>
                     <div class="footer__mail">
@@ -282,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="footer__nav">
+                <div class="footer__nav wow fadeInRight">
                     <button data-open class="footer__nav-link">ABOUT ME</button>
                     <a class="footer__nav-link" href="#portfolio">PROJECTS</a>
                     <button data-hire id="footer__hire" class="footer__nav-link">HIRE ME</button>
@@ -302,14 +314,20 @@
                 <button data-close class="locker__about">&times;</button>
                 <div class="modal__title">ABOUT ME</div>
                 <div class="modal__subtitle">WHO AM I</div>
-                <div class="modal__text">My name is <span class="text">Andrzej Slobodianyk</span> and I’m a Junior Front-End Developer. I have studied Accounting and Finanse at the University of Banking in Wrocław and now I have successfully transferred my passion to programming languages.
+                <div class="modal__text">My name is <span class="text">Andrzej Slobodianyk</span> and I’m a Junior
+                    Front-End Developer. I have studied Accounting and Finanse at the University of Banking in Wrocław
+                    and now I have successfully transferred my passion to programming languages.
 
-Now I wish to fully devote myself to a Front-End Developer job.
+                    Now I wish to fully devote myself to a Front-End Developer job.
 
-My main professional goal is to find a job that will give me an opportunity to deepen and improve previously acquired programming skills, engage in interesting and creative projects and raise my Front-End development qualifications. Mainly I want to focus on learning JavaScript. Also, I put a lot of work to write a clear and semantically correct code.</div>
+                    My main professional goal is to find a job that will give me an opportunity to deepen and improve
+                    previously acquired programming skills, engage in interesting and creative projects and raise my
+                    Front-End development qualifications. Mainly I want to focus on learning JavaScript. Also, I put a
+                    lot of work to write a clear and semantically correct code.</div>
 
                 <div class="modal__btn__center">
-                    <a href="CV_Andrzej_Slobodianyk.pdf" dowload="" target="_blank"><button class="modal__btn">SEE MY RESUME </button></a>
+                    <a href="CV_Andrzej_Slobodianyk.pdf" dowload="" target="_blank"><button class="modal__btn">SEE MY
+                            RESUME </button></a>
                 </div>
             </div>
         </div>
@@ -326,7 +344,8 @@ My main professional goal is to find a job that will give me an opportunity to d
                         <li class="navigation__contact">
                             <img class="image__contact" src="img/call.svg" alt="">
                             (+48) 577 077 387</li>
-                        <li class="navigation__contact"> <img class="image__contact" src="img/mail.svg" alt="">slobodjanik1997@gmail.com</li>
+                        <li class="navigation__contact"> <img class="image__contact" src="img/mail.svg"
+                                alt="">slobodjanik1997@gmail.com</li>
                     </ul>
                     <div class="form__group">
                         <form action="/" method="post">
@@ -338,7 +357,8 @@ My main professional goal is to find a job that will give me an opportunity to d
                     <div class="form__group">
                         <form action="/" method="post">
                             <label class="label" for="input-request">Request</label>
-                            <textarea class="form__textarea" type="text" id="input-request" placeholder="Type your request..."></textarea>
+                            <textarea class="form__textarea" type="text" id="input-request"
+                                placeholder="Type your request..."></textarea>
                         </form>
                     </div>
                     <div class="modal__btn--end">
@@ -357,8 +377,11 @@ My main professional goal is to find a job that will give me an opportunity to d
 
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-<script src="script.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
