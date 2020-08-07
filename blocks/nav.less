@@ -5,14 +5,27 @@
 
 
     @media @tablet {
-        display: none;
+        position: fixed;
+        right: 0px;
+        height: 50vh;
+        top:0;
+        background-color: fade(#cbbcbc, 50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        transform: translateX(100%);
+        transition: transform .5s ease-in; 
+        border-bottom-left-radius: 50px;
+
     }
 }
 
+.nav-active { 
+    transform: translateX(0%);
+}
+
 .nav__link {
-
-
-
     margin-left: 2.8rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -46,12 +59,9 @@
 
     }
 
-}
-
-.burger {
-    display: none;
-
-    @media @tablet {
-        display: block;
+    @media @tablet { 
+          padding: 20px;
     }
+
+
 }

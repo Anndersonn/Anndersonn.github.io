@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
         swal("Sorry", "I'm currently working on it", "error");
     });
 
-   ///////////////////// MODALS ///////////////////
+    ///////////////////// MODALS ///////////////////
 
     const openModal = document.querySelectorAll('[data-open]'),
         closeModal = document.querySelector('[data-close]'),
@@ -88,4 +88,24 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    ////////////*BURGER*//////////////////////
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+        // const burgerOverlay = document.getElementById('overlay');
+    
+        function navSlide() { 
+        burger.addEventListener('click', (e) => {
+              nav.classList.toggle('nav-active');
+              burger.classList.toggle('toggle');
+        });
+    
+    }
+    navSlide ();
+
 });
+
+
+
+
+
