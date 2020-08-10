@@ -36,6 +36,10 @@
         box-shadow: 4px 4px 15px rgba(179, 164, 164, );
     }
 
+    @media @mobile-lg { 
+        height: 100%;
+    }
+
 }
 
 .portfolio__column {
@@ -45,16 +49,12 @@
 
     @media @mobile-lg {
         flex-basis: 50%;
+        width: 90%;
     }
 
     @media @mobile-md {
         flex-basis: 100%;
     }
-
-
-            @media @mobile-lg {
-    width: 90%;}
-
 
 }
 
@@ -110,6 +110,10 @@
         min-height: 160px;
     }
 
+    img { 
+        width: 100%;
+    }
+
 }
 
 .portfolio__background {
@@ -158,7 +162,11 @@
     z-index: 0;
 
     @media @mobile-lg {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 1.5rem;
     }
 
 
@@ -187,7 +195,7 @@
     }
 
     @media @mobile-lg {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     @media @mobile-sm {
