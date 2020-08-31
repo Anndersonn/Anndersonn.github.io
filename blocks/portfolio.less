@@ -5,7 +5,38 @@
     width: 100%;
     text-align: center;
     padding-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio__categories {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio__filter {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.filter__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #b0acac;
+    &:focus{
+        outline: none;
+    }
+
+    &:hover { 
+        color: black;
+        transition: .5s linear;
+    }
+}
+.active{
+    color: black;
 }
 
 .portfolio__main {
@@ -21,7 +52,6 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     margin-bottom: 3rem;
 }
 
@@ -36,46 +66,69 @@
         box-shadow: 4px 4px 15px rgba(179, 164, 164, );
     }
 
-    @media @mobile-lg { 
+    @media @mobile-lg {
         height: 200px;
     }
 
 }
 
 .portfolio__column {
-
-    width: 70%;
+    width: 25%;
     padding: 1rem;
 
     @media @mobile-lg {
-        flex-basis: 50%;
-        width: 90%;
+        flex-basis: 100%;
     }
 
     @media @mobile-md {
         flex-basis: 100%;
     }
 
+    @media @tablet { 
+        width: 100%;
+    }
+
 }
 
 .portfolio__black {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100%;
 
     transition: .3s linear;
 
     &:hover {
-    background-color: fade(@black, 90%);
-        }
+        background-color: fade(@black, 90%);
+    }
 
+}
+.portfolio__icon { 
+    display: flex;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    &:hover { 
+        opacity: 1;
+        transition: 0.3s linear;
+    }
+    img{ 
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .portfolio__active {
     width: 100%;
     cursor: pointer;
     height: 100%;
-    min-height: 500px;
+    max-height: auto;
 
     background: url(img/project-image.jpg) center no-repeat;
     background-size: 100%;
@@ -102,15 +155,15 @@
         min-height: 200px;
     }
 
-        @media @mobile-md {
+    @media @mobile-md {
         min-height: 180px;
     }
 
-            @media @mobile-sm {
+    @media @mobile-sm {
         min-height: 160px;
     }
 
-    img { 
+    img {
         width: 100%;
     }
 
@@ -119,7 +172,7 @@
 .portfolio__background {
 
     background-color: #000;
-        width: 100%;
+    width: 100%;
     cursor: pointer;
     height: 100%;
     min-height: 500px;
@@ -132,7 +185,7 @@
     transition: .3s linear;
 
 
-        @media @tablet {
+    @media @tablet {
         min-height: 300px;
     }
 
@@ -141,41 +194,22 @@
         min-height: 200px;
     }
 
-        @media @mobile-md {
+    @media @mobile-md {
         min-height: 180px;
     }
 
-            @media @mobile-sm {
+    @media @mobile-sm {
         min-height: 160px;
     }
-}
-
-.portfolio__number {
-
-    color: #fff;
-    position: absolute;
-
-    font-size: 5rem;
-
-    right: 2%;
-    top: 10%;
-    z-index: 0;
-
-    @media @mobile-lg {
-        font-size: 2rem;
-    }
-
-    @media @mobile-sm {
-        font-size: 1.5rem;
-    }
-
-
 
 }
 
-#text__progress, .portfolio__progress {
+#text__progress,
+.portfolio__progress {
     display: flex;
     color: #fff;
+
+font-size: .7rem;
 
     width: 100%;
     height: 100%;

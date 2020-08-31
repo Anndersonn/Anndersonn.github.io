@@ -11,7 +11,6 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="animate.css">
 </head>
-
 <body>
     <div class="header__bg">
         <div class="header">
@@ -27,7 +26,6 @@
                         </div>
                     </div>
                     <nav class="nav">
-
                         <a class="nav__link wow fadeInRight" href="#portfolio">PROJECTS</a>
                         <a class="nav__link wow fadeInRight" href="#footer">CONTACT</a>
                         <a class="nav__link wow fadeInRight" href="#skills">SKILLS</a>
@@ -38,14 +36,12 @@
                         <div class="line2"></div>
                         <div class="line3"></div>
                     </div>
-
                 </div>
                 <!--header__inner-->
             </div>
             <!--container-->
         </div>
         <!--header-->
-
         <div class="intro">
             <div class="container">
                 <div class="intro__inner">
@@ -74,25 +70,25 @@
         <!--intro-->
     </div>
     <!--header__bg-->
+    <!-- Portfolio -->
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="portfolio__title">
                 <h1 class="portfolio__main">PROJECTS</h1>
             </div>
+            <div class="portfolio__categories">
+                <div class="portfolio__filter">
+                    <button class="filter__btn active" data-id="All">All</button>
+                    <button class="filter__btn" data-id="Landing Page">Landing Pages</button>
+                    <button class="filter__btn" data-id="App">Apps</button>
+                    <button class="filter__btn" data-id="Js">JS</button>
+                </div>
+            </div>
             <div class="portfolio__inner">
-                <div class="portfolio__column wow fadeInUp">
+                <div class="portfolio__column wow fadeInUp" data-id="Landing Page">
                     <div class="portfolio__content">
                         <div class="portfolio__active" alt=""><img src="img/project-image.jpg" alt="">
-                            <a href="https://github.com/Anndersonn/Activebox.github.io" class="portfolio__black">
-
-
-                                <h1 class="portfolio__number">01</h1>
-                                <h1 id="text__progress" class="portfolio__progress">
-                                    <p>The first website I ever made. Simple landing page made using <span
-                                            class="color">HTML</span>, <span class="color">CSS</span> and a little bit
-                                        of <span class="color">native JavaScript</span>. Also it's fully <span
-                                            class="color">responsive</span>.</p>
-                                </h1>
+                            <a href="https://github.com/Anndersonn/Activebox.github.io" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
                             </a>
                         </div>
 
@@ -104,302 +100,452 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="portfolio__column wow fadeInUp">
+                <div class="portfolio__column wow fadeInUp" data-id="Landing Page">
                     <div class="portfolio__content">
 
                         <div class="portfolio__active"><img src="img/food.jpg" alt="">
-                            <a href="https://github.com/Anndersonn/Food" class="portfolio__black">
-                                <h1 class="portfolio__number">02</h1>
-                                <h1 class="portfolio__progress">
-                                    <p>
-                                        The project is in production during the Udemy course. On this website some
-                                        technologies have already been implemented using <span
-                                            class="color">JavaScript</span>, such as: <span class="color">modal
-                                            windows</span>,
-                                        <span class="color">timer</span> and <span class="color">tabs</span>.
-                                        The site is 70% ready, but you can already see it in my repository.</p>
-                                </h1>
+                            <a href="https://github.com/Anndersonn/Food" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
                             </a>
                         </div>
 
                         <div class="portfolio__item">
 
-                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__category">Category: Landing Page</div>
                             <div class="portfolio__name">Project
-                                name</div>
+                                name: Food</div>
                         </div>
                     </div>
                 </div>
-                <!--
-                <div class="portfolio__column portfolio__column--right">
-                    <div class="portfolio__content">
-                        <img class="portfolio__image" src="https://placehold.it/370x300" alt="">
-                        <div class="portfolio__item">
-
-                            <div class="portfolio__category">Category</div>
-                            <div class="portfolio__name">Project name</div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__column portfolio__column--left">
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
                     <div class="portfolio__content">
 
-                        <img class="portfolio__image" src="https://placehold.it/370x300" alt="">
+                        <div class="portfolio__active"><img src="apps imgs/1.jpg" alt="">
+                            <a href="#" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+
                         <div class="portfolio__item">
 
-                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__category">Category: Native JavaScript</div>
                             <div class="portfolio__name">Project
-                                name</div>
+                                name: color-flipper</div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__column">
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/2.jpg" alt="">
+                            <a href="#" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: counter</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/3.jpg" alt="">
+                            <a href="#" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: reviews</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/4.jpg" alt="">
+                            <a href="#" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: sidebar</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
                     <div class="portfolio__content">
 
-                        <img class="portfolio__image" src="https://placehold.it/370x300" alt="">
+                        <div class="portfolio__active"><img src="apps imgs/6.jpg" alt="">
+                            <a href="#" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
                         <div class="portfolio__item">
-
-                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__category">Category: Native JavaScript</div>
                             <div class="portfolio__name">Project
-                                name</div>
+                                name: modal</div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__column portfolio__column--right">
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
                     <div class="portfolio__content">
 
-                        <img class="portfolio__image" src="https://placehold.it/370x300" alt="">
+                        <div class="portfolio__active"><img src="apps imgs/7.jpg" alt="">
+                            <a href="https://github.com/Anndersonn/Food" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+
                         <div class="portfolio__item">
 
-                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__category">Category: Native JavaScript</div>
                             <div class="portfolio__name">Project
-                                name</div>
+                                name: questions</div>
                         </div>
                     </div>
                 </div>
--->
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
 
-
-            </div>
-            <!--/portfolio__inner-->
-
-        </div>
-        <!--/container-->
-    </div>
-    <!--/portfolio-->
-    <div id="skills" class="skills">
-        <h1 class="skills__title wow fadeInUp">My skills</h1>
-        <div class="skills__container">
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp">
-                    <img src="img/icons8-html-5-480.png" alt="">
-                </div>
-                <div class="skills__html wow fadeInUp">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp" data-wow-duration="0.3s">
-                    <img src="img/sass.png" alt="">
-                </div>
-                <div class="skills__sass wow fadeInUp" data-wow-duration="0.3s">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp" data-wow-duration="0.4s">
-                    <img src="img/icons8-javascript-480.png" alt="">
-                </div>
-                <div class="skills__js wow fadeInUp" data-wow-duration="0.4s">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp" data-wow-duration="0.5s">
-                    <img src="img/icons8-github-384.png" alt="">
-                </div>
-                <div class="skills__git wow fadeInUp" data-wow-duration="0.5s">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp">
-                    <img src="img/icons8-bootstrap-240.png" alt="">
-                </div>
-                <div class="skills__bootstrap wow fadeInUp">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp" data-wow-duration="0.3s">
-                    <img src="img/icons8-react-480.png" alt="">
-                </div>
-                <div class="skills__react wow fadeInUp" data-wow-duration="0.3s">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp" data-wow-duration="0.4s">
-                    <img src="img/icons8-redux-240.png" alt="">
-                </div>
-                <div class="skills__redux wow fadeInUp" data-wow-duration="0.4s">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-            <div class="skills__inner">
-                <div class="skills__icon wow fadeInUp" data-wow-duration="0.5s">
-                    <img src="img/icons8-npm-480.png" alt="">
-                </div>
-                <div class="skills__npm wow fadeInUp" data-wow-duration="0.5s">
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                    <i class="fas fa-check-square"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__credits wow fadeInLeft">
-                    <div class="footer__socials">
-                        <a href="https://www.facebook.com/profile.php?id=100006173475893" target="_blank"><img
-                                src="img/facebook.svg" width="20" height="20" alt=""></a>
-                        <a href="https://www.linkedin.com/in/andrzej-slobodianyk-746a96177/" target="_blank"><img
-                                src="img/linkedin.svg" width="20" height="20" alt=""></a>
-                        <a href="https://github.com/Anndersonn/Anndersonn.github.io" target="_blank"><img
-                                src="img/GitHub-Mark-Light-64px.png" width="22" height="22" alt=""></a>
-                        <a href="#"><img src="img/mail2.svg" width="20" height="25" alt=""></a>
-                    </div>
-                    <div class="footer__mail">
-                        <a href="#">slobodjanik1997@gmail.com</a>
+                        <div class="portfolio__active"><img src="apps imgs/8.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: menu</div>
+                        </div>
                     </div>
                 </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
 
-                <div class="footer__nav wow fadeInRight">
-                    <button data-open class="footer__nav-link">ABOUT ME</button>
-                    <a class="footer__nav-link" href="#portfolio">PROJECTS</a>
-                    <button data-hire id="footer__hire" class="footer__nav-link">HIRE ME</button>
-                </div>
-
-            </div>
-            <!--footer__inner-->
-        </div>
-        <!--container-->
-
-    </footer>
-    <!--footer-->
-    <!---------------------------------------------------    MODALS    ------------------------------------------------- -->
-    <div class="modal" id="modal__about">
-        <div class="modal__dialog">
-            <div class="modal__work">
-                <button data-close class="locker__about">&times;</button>
-                <div class="modal__title">ABOUT ME</div>
-                <div class="modal__subtitle">WHO AM I</div>
-                <div class="modal__text">My name is <span class="text">Andrzej Slobodianyk</span> and I’m a Junior
-                    Front-End Developer. I have studied Accounting and Finanse at the University of Banking in Wrocław
-                    and now I have successfully transferred my passion to programming languages.
-
-                    Now I wish to fully devote myself to a Front-End Developer job.
-
-                    My main professional goal is to find a job that will give me an opportunity to deepen and improve
-                    previously acquired programming skills, engage in interesting and creative projects and raise my
-                    Front-End development qualifications. Mainly I want to focus on learning JavaScript. Also, I put a
-                    lot of work to write a clear and semantically correct code.</div>
-
-                <div class="modal__btn__center">
-                    <a href="CV_Andrzej_Slobodianyk.pdf" dowload="" target="_blank"><button class="modal__btn">SEE MY
-                            RESUME </button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="modal__hire">
-        <div class="modal__dialog modal__dialog--sm">
-            <button hire-close class="locker__hire locker__hire--second">&times;</button>
-            <div class="modal__content">
-                <div class="modal__title modal__title--sm">Let's talk!</div>
-                <div class="modal__subtitle modal__subtitle--sm">Call me or send a request</div>
-                <div class="info__contact">
-                    <ul class="form__contact">
-                        <li class="navigation__contact">
-                            <img class="image__contact" src="img/call.svg" alt="">
-                            (+48) 577 077 387</li>
-                        <li class="navigation__contact"> <img class="image__contact" src="img/mail.svg"
-                                alt="">slobodjanik1997@gmail.com</li>
-                    </ul>
-                    <div class="form__group">
-                        <form action="/" method="post">
-                            <label class="label" for="input-email">Adress e-mail</label>
-                            <input class="input" type="text" id="input-email" placeholder="Adress e-mail">
-                        </form>
-                    </div>
-
-                    <div class="form__group">
-                        <form action="/" method="post">
-                            <label class="label" for="input-request">Request</label>
-                            <textarea class="form__textarea" type="text" id="input-request"
-                                placeholder="Type your request..."></textarea>
-                        </form>
-                    </div>
-                    <div class="modal__btn--end">
-                        <button id="resume" class="btn btn--modal">SEND</button>
+                        <div class="portfolio__active"><img src="apps imgs/9.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: video</div>
+                        </div>
                     </div>
                 </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
 
+                        <div class="portfolio__active"><img src="apps imgs/10.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: scroll</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
 
+                        <div class="portfolio__active"><img src="apps imgs/11.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: tabs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+
+                        <div class="portfolio__active"><img src="apps imgs/13.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: lorem-ipsum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+
+                        <div class="portfolio__active"><img src="apps imgs/14.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: grocery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/15.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: slider</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="Js">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/12.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: Native JavaScript</div>
+                            <div class="portfolio__name">Project
+                                name: timer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="App">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/app1.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: App</div>
+                            <div class="portfolio__name">Project
+                                name: Rock Paper Scissors</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__column wow fadeInUp" data-id="App">
+                    <div class="portfolio__content">
+                        <div class="portfolio__active"><img src="apps imgs/app2.jpg" alt="">
+                            <a href="" class="portfolio__black"><img class="portfolio__icon" src="img/external-link-symbol.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio__item">
+                            <div class="portfolio__category">Category: App</div>
+                            <div class="portfolio__name">Project
+                                name: tic-tac-toe</div>
+                        </div>
+                    </div>
+                </div>
+                <!--/portfolio__inner-->
             </div>
-            <div class="modal__photo">
-
+            <!--/container-->
+        </div>
+        <!--/portfolio-->
+        <!-- Skills -->
+        <div id="skills" class="skills">
+            <h1 class="skills__title wow fadeInUp">My skills</h1>
+            <div class="skills__container">
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp">
+                        <img src="img/icons8-html-5-480.png" alt="">
+                    </div>
+                    <div class="skills__html wow fadeInUp">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp" data-wow-duration="0.3s">
+                        <img src="img/sass.png" alt="">
+                    </div>
+                    <div class="skills__sass wow fadeInUp" data-wow-duration="0.3s">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp" data-wow-duration="0.4s">
+                        <img src="img/icons8-javascript-480.png" alt="">
+                    </div>
+                    <div class="skills__js wow fadeInUp" data-wow-duration="0.4s">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp" data-wow-duration="0.5s">
+                        <img src="img/icons8-github-384.png" alt="">
+                    </div>
+                    <div class="skills__git wow fadeInUp" data-wow-duration="0.5s">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp">
+                        <img src="img/icons8-bootstrap-240.png" alt="">
+                    </div>
+                    <div class="skills__bootstrap wow fadeInUp">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp" data-wow-duration="0.3s">
+                        <img src="img/icons8-react-480.png" alt="">
+                    </div>
+                    <div class="skills__react wow fadeInUp" data-wow-duration="0.3s">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp" data-wow-duration="0.4s">
+                        <img src="img/icons8-redux-240.png" alt="">
+                    </div>
+                    <div class="skills__redux wow fadeInUp" data-wow-duration="0.4s">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
+                <div class="skills__inner">
+                    <div class="skills__icon wow fadeInUp" data-wow-duration="0.5s">
+                        <img src="img/icons8-npm-480.png" alt="">
+                    </div>
+                    <div class="skills__npm wow fadeInUp" data-wow-duration="0.5s">
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__credits wow fadeInLeft">
+                        <div class="footer__socials">
+                            <a href="https://www.facebook.com/profile.php?id=100006173475893" target="_blank"><img
+                                    src="img/facebook.svg" width="20" height="20" alt=""></a>
+                            <a href="https://www.linkedin.com/in/andrzej-slobodianyk-746a96177/" target="_blank"><img
+                                    src="img/linkedin.svg" width="20" height="20" alt=""></a>
+                            <a href="https://github.com/Anndersonn/Anndersonn.github.io" target="_blank"><img
+                                    src="img/GitHub-Mark-Light-64px.png" width="22" height="22" alt=""></a>
+                            <a href="#"><img src="img/mail2.svg" width="20" height="25" alt=""></a>
+                        </div>
+                        <div class="footer__mail">
+                            <a href="#">slobodjanik1997@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__nav wow fadeInRight">
+                        <button data-open class="footer__nav-link">ABOUT ME</button>
+                        <a class="footer__nav-link" href="#portfolio">PROJECTS</a>
+                        <button data-hire id="footer__hire" class="footer__nav-link">HIRE ME</button>
+                    </div>
+                </div>
+                <!--footer__inner-->
+            </div>
+            <!--container-->
+        </footer>
+        <!--footer-->
+        <!---------------------------------------------------    MODALS    ------------------------------------------------- -->
+        <div class="modal" id="modal__about">
+            <div class="modal__dialog">
+                <div class="modal__work">
+                    <button data-close class="locker__about">&times;</button>
+                    <div class="modal__title">ABOUT ME</div>
+                    <div class="modal__subtitle">WHO AM I</div>
+                    <div class="modal__text">My name is <span class="text">Andrzej Slobodianyk</span> and I’m a Junior
+                        Front-End Developer. I have studied Accounting and Finanse at the University of Banking in
+                        Wrocław
+                        and now I have successfully transferred my passion to programming languages.
 
+                        Now I wish to fully devote myself to a Front-End Developer job.
 
+                        My main professional goal is to find a job that will give me an opportunity to deepen and
+                        improve
+                        previously acquired programming skills, engage in interesting and creative projects and raise my
+                        Front-End development qualifications. Mainly I want to focus on learning JavaScript. Also, I put
+                        a
+                        lot of work to write a clear and semantically correct code.</div>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="script.js"></script>
+                    <div class="modal__btn__center">
+                        <a href="CV_Andrzej_Slobodianyk.pdf" dowload="" target="_blank"><button class="modal__btn">SEE
+                                MY
+                                RESUME </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal__hire">
+            <div class="modal__dialog modal__dialog--sm">
+                <button hire-close class="locker__hire locker__hire--second">&times;</button>
+                <div class="modal__content">
+                    <div class="modal__title modal__title--sm">Let's talk!</div>
+                    <div class="modal__subtitle modal__subtitle--sm">Call me or send a request</div>
+                    <div class="info__contact">
+                        <ul class="form__contact">
+                            <li class="navigation__contact">
+                                <img class="image__contact" src="img/call.svg" alt="">
+                                (+48) 577 077 387</li>
+                            <li class="navigation__contact"> <img class="image__contact" src="img/mail.svg"
+                                    alt="">slobodjanik1997@gmail.com</li>
+                        </ul>
+                        <div class="form__group">
+                            <form action="/" method="post">
+                                <label class="label" for="input-email">Adress e-mail</label>
+                                <input class="input" type="text" id="input-email" placeholder="Adress e-mail">
+                            </form>
+                        </div>
+
+                        <div class="form__group">
+                            <form action="/" method="post">
+                                <label class="label" for="input-request">Request</label>
+                                <textarea class="form__textarea" type="text" id="input-request"
+                                    placeholder="Type your request..."></textarea>
+                            </form>
+                        </div>
+                        <div class="modal__btn--end">
+                            <button id="resume" class="btn btn--modal">SEND</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__photo">
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="script.js"></script>
 </body>
 
 </html>

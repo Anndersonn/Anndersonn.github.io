@@ -90,22 +90,45 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     ////////////*BURGER*//////////////////////
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav');
-        // const burgerOverlay = document.getElementById('overlay');
-    
-        function navSlide() { 
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    // const burgerOverlay = document.getElementById('overlay');
+
+    function navSlide() {
         burger.addEventListener('click', (e) => {
-              nav.classList.toggle('nav-active');
-              burger.classList.toggle('toggle');
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
         });
-    
+
     }
-    navSlide ();
+    navSlide();
 
 });
 
+////////////*FILTER*//////////////////////
 
+const filterBtns = document.querySelectorAll('.filter__btn');
+const portfolio = document.querySelectorAll('.portfolio__column');
 
+for(let i=0; i < filterBtns.length; i++) {
+    filterBtns[i].addEventListener('click', function(){
+        for(let j=0; j < filterBtns.length; j++) {
+            filterBtns[j].classList.remove('active');
+        }
+        this.classList.add("active");
+        const target = this.getAttribute('data-id');
 
+        for(let k=0; k < portfolio.length; k++)  {
+            portfolio[k].style.display = "none";
+
+            if(portfolio[k].getAttribute("data-id")==target) {
+                portfolio[k].style.display = "block";
+            }
+            if(target=="All") {
+                portfolio[k].style.display = "block";
+            }
+        }
+
+    });
+}
 
